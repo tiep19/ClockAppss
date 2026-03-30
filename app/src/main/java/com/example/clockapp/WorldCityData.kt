@@ -1,0 +1,52 @@
+package com.example.clockapp
+
+data class WorldCity(
+    val name: String,
+    val country: String,
+    val timeZone: String,
+    val lat: Double,
+    val lng: Double
+)
+
+val ALL_CITIES = listOf(
+    WorldCity("Hà Nội", "Việt Nam", "Asia/Ho_Chi_Minh", 21.0285, 105.8542),
+    WorldCity("TP. Hồ Chí Minh", "Việt Nam", "Asia/Ho_Chi_Minh", 10.8231, 106.6297),
+    WorldCity("Đà Nẵng", "Việt Nam", "Asia/Ho_Chi_Minh", 16.0544, 108.2022),
+    WorldCity("London", "Anh", "Europe/London", 51.5074, -0.1278),
+    WorldCity("Paris", "Pháp", "Europe/Paris", 48.8566, 2.3522),
+    WorldCity("Berlin", "Đức", "Europe/Berlin", 52.5200, 13.4050),
+    WorldCity("Moscow", "Nga", "Europe/Moscow", 55.7558, 37.6173),
+    WorldCity("Dubai", "UAE", "Asia/Dubai", 25.2048, 55.2708),
+    WorldCity("Mumbai", "Ấn Độ", "Asia/Kolkata", 19.0760, 72.8777),
+    WorldCity("New Delhi", "Ấn Độ", "Asia/Kolkata", 28.6139, 77.2090),
+    WorldCity("Bangkok", "Thái Lan", "Asia/Bangkok", 13.7563, 100.5018),
+    WorldCity("Singapore", "Singapore", "Asia/Singapore", 1.3521, 103.8198),
+    WorldCity("Kuala Lumpur", "Malaysia", "Asia/Kuala_Lumpur", 3.1390, 101.6869),
+    WorldCity("Jakarta", "Indonesia", "Asia/Jakarta", -6.2088, 106.8456),
+    WorldCity("Beijing", "Trung Quốc", "Asia/Shanghai", 39.9042, 116.4074),
+    WorldCity("Shanghai", "Trung Quốc", "Asia/Shanghai", 31.2304, 121.4737),
+    WorldCity("Hong Kong", "Trung Quốc", "Asia/Hong_Kong", 22.3193, 114.1694),
+    WorldCity("Seoul", "Hàn Quốc", "Asia/Seoul", 37.5665, 126.9780),
+    WorldCity("Busan", "Hàn Quốc", "Asia/Seoul", 35.1796, 129.0756),
+    WorldCity("Tokyo", "Nhật Bản", "Asia/Tokyo", 35.6762, 139.6503),
+    WorldCity("Osaka", "Nhật Bản", "Asia/Tokyo", 34.6937, 135.5023),
+    WorldCity("Sydney", "Úc", "Australia/Sydney", -33.8688, 151.2093),
+    WorldCity("Melbourne", "Úc", "Australia/Melbourne", -37.8136, 144.9631),
+    WorldCity("New York", "Mỹ", "America/New_York", 40.7128, -74.0060),
+    WorldCity("Los Angeles", "Mỹ", "America/Los_Angeles", 34.0522, -118.2437),
+    WorldCity("Chicago", "Mỹ", "America/Chicago", 41.8781, -87.6298),
+    WorldCity("Toronto", "Canada", "America/Toronto", 43.6532, -79.3832),
+    WorldCity("São Paulo", "Brazil", "America/Sao_Paulo", -23.5505, -46.6333),
+    WorldCity("Cairo", "Ai Cập", "Africa/Cairo", 30.0444, 31.2357),
+    WorldCity("Nairobi", "Kenya", "Africa/Nairobi", -1.2921, 36.8219),
+    WorldCity("Johannesburg", "Nam Phi", "Africa/Johannesburg", -26.2041, 28.0473),
+    WorldCity("Istanbul", "Thổ Nhĩ Kỳ", "Europe/Istanbul", 41.0082, 28.9784),
+    WorldCity("Rome", "Ý", "Europe/Rome", 41.9028, 12.4964),
+    WorldCity("Madrid", "Tây Ban Nha", "Europe/Madrid", 40.4168, -3.7038),
+    WorldCity("Amsterdam", "Hà Lan", "Europe/Amsterdam", 52.3676, 4.9041),
+    WorldCity("Wuhan", "Trung Quốc", "Asia/Shanghai", 30.5928, 114.3055),
+    WorldCity("Riyadh", "Ả Rập Xê Út", "Asia/Riyadh", 24.7136, 46.6753),
+    WorldCity("Karachi", "Pakistan", "Asia/Karachi", 24.8607, 67.0011),
+    WorldCity("Dhaka", "Bangladesh", "Asia/Dhaka", 23.8103, 90.4125),
+    WorldCity("Colombo", "Sri Lanka", "Asia/Colombo", 6.9271, 79.8612)
+)

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextClock
+        android:id="@+id/tc_alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm"
+        android:format24Hour="HH:mm"
+        android:textColor="@color/white"
+        android:textSize="96sp"
+        android:fontFamily="sans-serif-light"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/tc_alarm_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextClock
+        android:id="@+id/tc_alarm_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="EEE, dd MMM"
+        android:format24Hour="EEE, dd MMM"
+        android:textColor="@color/text_secondary"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_alarm_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_alarm_time" />
+
+    <TextView
+        android:id="@+id/tv_alarm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        app:drawableStartCompat="@android:drawable/ic_lock_idle_alarm"
+        app:drawableTint="@color/accent_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_alarm_date" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="48dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_snooze"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                app:icon="@android:drawable/ic_popup_sync"
+                app:iconSize="32dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="@color/white"
+                android:backgroundTint="@color/button_snooze"
+                app:cornerRadius="36dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạm dừng"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_dismiss"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                app:iconSize="36dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="@color/white"
+                android:backgroundTint="@color/button_stop"
+                app:cornerRadius="36dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bỏ qua"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

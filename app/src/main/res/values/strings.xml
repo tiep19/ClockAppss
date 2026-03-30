@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Đồng hồ</string>
+    <string name="alarm">Chuông báo</string>
+    <string name="world_clock">Giờ quốc tế</string>
+    <string name="stopwatch">Bấm giờ</string>
+    <string name="timer">Đếm giờ</string>
+    <string name="dismiss">Bỏ qua</string>
+    <string name="snooze">Tạm dừng</string>
+    <string name="start">Bắt đầu</string>
+    <string name="stop">Dừng</string>
+    <string name="reset">Đặt lại</string>
+    <string name="lap">Vòng</string>
+    <string name="add_alarm">Thêm chuông báo</string>
+    <string name="channel_alarm_id">alarm_channel</string>
+    <string name="channel_alarm_name">Chuông báo</string>
+    <string name="all_alarms_off">Tất cả chuông\nbáo đều tắt</string>
+    <string name="bedtime_desc">Giữ điện thoại của bạn luôn yên lặng và có một đêm ngon giấc với chế độ Ngủ.</string>
+</resources>
